@@ -4,7 +4,7 @@ import '../../App.css'
 import { Search } from './Search.js'
 import { Header } from '../Header/Header.js'
 
-class Main extends Component {
+export class Main extends Component {
   constructor () {
     super()
     this.state = {
@@ -27,6 +27,9 @@ class Main extends Component {
         that.setState({
           hackerNewsList: data.hits
         })
+      })
+      .catch(err => {
+        
       })
   }
 

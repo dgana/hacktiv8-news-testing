@@ -21,6 +21,9 @@ class People extends Component {
           PeopleList: data.results
         })
       })
+      .catch(err => {
+
+      })
   }
 
   render () {
